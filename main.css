@@ -1,0 +1,222 @@
+/*body*/
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(149, 206, 203);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*header*/
+header {
+    background-color: whitesmoke;
+    height: 40px;
+    /*position: sticky;*/
+    display: flex;
+    justify-content: space-between; /*positions elements horizontally in parent*/
+}
+
+.header {
+    display: inline-block;
+}
+
+#head2 {
+    background-color: whitesmoke;
+}
+
+/*Dropdown menu*/
+#menu {
+    cursor: pointer;
+}
+
+#menu:hover {
+    text-decoration: underline;
+}
+
+#head3:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.dropdown a {
+    color: black;
+    display: block;
+    padding: 0.5em;
+    margin: 0.2em;
+}
+
+.dropdown a:hover {
+    text-decoration: underline;
+}
+
+.show {
+    display: block;
+}
+/*Slideshow*/
+.slideshow {
+    position: relative;
+    margin: auto;
+} 
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 1em;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+} 
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    text-decoration: underline;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+#slide1, #slide2, #slide3 {
+    background-size: 100% 100%;
+    height: 370px;
+    position: relative;
+}
+#slide1 {
+    background-image: url(img/rockymountains.jpg);
+}
+
+#slide2 {
+    background-image: url(./img/glacier.jfif);
+    display: none;
+}
+
+#slide3 {
+    background-image: url(./img/mt.zion.jfif);
+    display: none;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    width: 30%;
+    margin: 0;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 1em;
+}
+/*about section*/
+.about {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px;
+    margin: 1em;
+    padding: 2px 40px;
+}
+
+/*events section*/
+
+#eventTitle {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.eventwrapper {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content:center;
+    margin: 1em;
+    box-shadow: inset 0 2px 5px;
+}
+
+.eventblock {
+    background-color: rgb(166, 209, 166);
+    box-shadow: 0 0.5px 3.5px;
+    display: inline-block;
+    margin: 1.3em 2em;
+    width: 10em;
+    height:min-content;
+    padding: 1em;  
+    border:  1px solid black;
+    border-radius: 5px;
+}
+
+/*donate section*/
+.donateWrap {
+    height: 13em;
+    margin: 1em;
+    padding: 1em 2em;
+}
+
+.donate {
+    display: inline-block;
+    margin: auto;
+}
+
+#donateText {
+    float: left;
+    width: 68%;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+
+#donateImg {
+    float: right;
+    width: 28%;
+    height: 100%;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 1em;
+}
+
+.footerA {
+    color: white;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="functions.js"></script>
+    <title>Static Store Front</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="header" id="head1">
+            <p onclick="myFunction()" id="menu">☰ Menu</p>
+            <div class="dropdown" id="myDrop">
+                <a href="#">National Parks</a>
+                <a href="#">Event Calendar</a>
+                <a href="#">Trip Ideas</a>
+                <a href="#">What's Popular</a>
+                <a href="#">FAQ</a>
+                <a href="#">Donate</a>
+                <a href="#">Account</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+        <div class="header" id="head2">
+            <h3><a href="index.html">U.S. National Park Trips</a></h3>
+        </div>
+        <div class="header" >
+            <p id="head3"><a href="#">Your Bookings</a></p>
+        </div>
+    </header>
+
+    <!--Slideshow-->
+    <div class="slideshow">
+        <div class="slides" id="slide1">
+            <div class="text">
+            <h3>Rocky Mountains National Park</h3>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur ad praesentium iste.</p>
+            <button>Book Your Trip</button>
+            </div>
+        </div>
+
+        <div class="slides" id="slide2">
+            <div class="text">
+            <h3>Glacier National Park</h3>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur ad praesentium iste.</p>
+            <button>Book Your Trip</button>
+            </div>
+        </div>
+
+        <div class="slides" id="slide3">
+            <div class="text">
+            <h3>Mt. Zion National Park</h3>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur ad praesentium iste.</p>
+            <button>Book Your Trip</button>
+            </div>
+        </div>
+
+        <!--navigation buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--about section-->
+    <div class="about">
+        <h2>Your Scenic Vacation Awaits!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo consequatur, earum, dignissimos ea qui ad reiciendis doloribus cupiditate eaque omnis modi natus quod labore nemo veniam corrupti dolorum fuga at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut, adipisci dolores modi animi quod, vero et magni beatae, nam optio laboriosam inventore velit? Nobis distinctio consectetur molestias repellat corporis?</p>
+    </div>
+    <!--events section-->
+    <h3 id="eventTitle">Upcoming Events</h3>
+    <div class="eventwrapper">
+        <div class="eventblock" >
+            <h5>Let's Go Fishing!</h5>
+            <hr />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Reserve Your Spot</button>
+        </div>
+        <div class="eventblock" >
+            <h5>Frog Frolic</h5>
+            <hr />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Reserve Your Spot</button>
+        </div>
+        <div class="eventblock" >
+            <h5>Ranger-Guided Hike</h5>
+            <hr />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Reserve Your Spot</button>
+        </div>
+        <div class="eventblock" >
+            <h5>Paleantology Demo</h5>
+            <hr />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Reserve Your Spot</button>
+        </div>
+    </div>
+    <!--donate section-->
+    <div class="donateWrap">
+        <div class="donate" id="donateText">
+            <h2>Make an Impact</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi tenetur rerum, sequi dicta cupiditate quae totam eius accusantium, quo dolor quibusdam! Commodi dolores similique ratione quo. Minima alias cum nesciunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et tempore eos numquam cupiditate ipsum veritatis earum error aliquid eveniet dolorem omnis, odio quas. Praesentium deleniti omnis quod quasi hic.</p>
+            <button>Donate</button>
+            <button>Volunteer</button>
+        </div>
+        <img class="donate" id="donateImg" src="./img/donate.jpg"></img>
+    </div>
+    <!--footer-->
+    <footer>
+        <nav>
+            <a href="#" class="footerA">Copyright &copy;2021 |</a>
+            <a href="#" class="footerA">FAQ |</a>
+            <a href="#" class="footerA">About |</a>
+            <a href="#" class="footerA">Privacy Policy |</a>
+            <a href="#" class="footerA">Contact Us |</a>
+            <a href="#" class="footerA">Site by Gaby C</a>
+        </nav>
+    </footer>
+</body>
+</html>
+
